@@ -144,9 +144,8 @@ div {
 }
 .copyright{
     padding:20px;
-    float: none;
     width: 100%;
-    
+    float:none;
     text-align: center;
 }
 .events_1_of_3 a span {
@@ -180,6 +179,7 @@ div {
 footer {
     background: #fff;
     background: rgba(255,255,255,0.8);
+    
 }
 
 footer p {
