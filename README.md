@@ -12,3 +12,5 @@ slider in home page will be changed soon
 Copyright 2015 Aayaam
 
 maniranjan work on aayam
+
+maniranjan aayam
