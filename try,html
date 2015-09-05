@@ -6,12 +6,72 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="aayaamweb">
-    <meta name="author" content="pradeep_sir..">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <title>About - Business Casual - Start Bootstrap Theme</title>
+    <title>Events</title>
+    <script language="javascript" type="text/javascript">
+function showHide(shID) {
+   if (document.getElementById(shID)) {
+      if (document.getElementById(shID+'-show').style.display != 'none') {
+         document.getElementById(shID+'-show').style.display = 'none';
+         document.getElementById(shID).style.display = 'block';
+      }
+      else {
+         document.getElementById(shID+'-show').style.display = 'inline';
+         document.getElementById(shID).style.display = 'none';
+      }
+   }
+}
+</script>
+<style type="text/css">
+   /* This CSS is just for presentational purposes. */
+   body {
+      font-size: 62.5%;
+      background-color: #777; }
+   #wrap {
+      font: 1.3em/1.3 Arial, Helvetica, sans-serif;
+      width: 30em;
+      margin: 0 auto;
+      padding: 1em;
+      background-color: #fff; }
+   h1 {
+      font-size: 200%; }
 
-    <!-- Bootsggggggtrap Core  -->
+   /* This CSS is used for the Show/Hide functionality. */
+   .more {
+      display: none;
+      border-top: 1px solid #666;
+      border-bottom: 1px solid #666; }
+   a.showLink, a.hideLink {
+      text-decoration: none;
+      color: #36f;
+      padding-left: 8px;
+      background: transparent url(down.gif) no-repeat left; }
+   a.hideLink {
+      background: transparent url(up.gif) no-repeat left; }
+   a.showLink:hover, a.hideLink:hover {
+      border-bottom: 1px dotted #36f; }
+</style>
+
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+
+    <script type="text/javascript">
+    
+        $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+
+      
+
+    </script>
+
+    
+</style>
+
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -32,11 +92,18 @@
 
 <body>
 
-    <div class="brand">Business Casual</div>
-    <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+    
+    <div class="mybrand">
+    </div>
+    <div class="address-bar">
+    <img style="display:block;float:left;overflow:hidden; margin-left:40px"class"img-left" src="img/mylogo1.png" height="150" width="170">    
+    <img style="margin-top:20px;float:centre;overflow:hidden;" class"img-left" src="img/logo1.png" height="100" width="300">
+    <img style="margin-top:10px;float:right;overflow:hidden;margin-right:40px" class"img-left" src="img/inst.png" height="130" width="120">
+        
+        </div>
 
-    <!-- Navigation rahul -->
-    <nav class="navbar navbar-default" role="navigation">
+    <!-- Navigation -->
+    <nav  class="navbar navbar-default" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -56,13 +123,16 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="about.html">Blog</a>
                     </li>
                     <li>
-                        <a href="blog.html">Blog</a>
+                        <a href="events.html">Events</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.html">Parivar</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact us</a>
                     </li>
                 </ul>
             </div>
@@ -77,8 +147,43 @@
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">About
-                        <strong>business casual</strong>
+                    <h2 class="intro-text text-center">Umang
+                        <strong>2015</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="img/9.jpg" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-6">
+
+               
+                    <p>This is a great place to introduce your company or project and describe what you do.</p>
+                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+                     <a href="#" id="example1-show" class="showLink" onclick="showHide('example1');return false;">See more.</a></p>
+      <div id="example1" class="more">
+         <p>Congratulations! You've found the magic hidden text! Clicking the link below will hide this content again.</p>
+         <p><a href="#" id="example1-hide" class="hideLink" onclick="showHide('example1');return false;">Hide this content.</a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+
+         
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Hindi
+                        <strong>Learning</strong>
                     </h2>
                     <hr>
                 </div>
@@ -89,11 +194,18 @@
                     <p>This is a great place to introduce your company or project and describe what you do.</p>
                     <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.</p>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <a href="#" id="example4-show" class="showLink" onclick="showHide('example4');return false;">See more.</a></p>
+      <div id="example4" class="more">
+         <p>Congratulations! You've found the magic hidden text! Clicking the link below will hide this content again.</p>
+         <p><a href="#" id="example4-hide" class="hideLink" onclick="showHide('example4');return false;">Hide this content.</a>
                 </div>
                 <div class="clearfix"></div>
             </div>
         </div>
 
+
+        
+<!--
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
@@ -124,7 +236,7 @@
                 <div class="clearfix"></div>
             </div>
         </div>
-
+-->
     </div>
     <!-- /.container -->
 
@@ -138,7 +250,7 @@
         </div>
     </footer>
 
-    <!-- jQuery --ellellellellelle>
+    <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
