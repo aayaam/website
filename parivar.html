@@ -7,30 +7,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
+    <meta name="autdor" content="">
 
-    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+    <title>Events</title>
+    <script language="javascript" type="text/javascript">
+function showHide(shID) {
+   if (document.getElementById(shID)) {
+      if (document.getElementById(shID+'-show').style.display != 'none') {
+         document.getElementById(shID+'-show').style.display = 'none';
+         document.getElementById(shID).style.display = 'block';
+      }
+      else {
+         document.getElementById(shID+'-show').style.display = 'inline';
+         document.getElementById(shID).style.display = 'none';
+      }
+   }
+}
+</script>
+<style type="text/css">
+   /* tdis CSS is just for presentational purposes. */
+   body {
+      font-size: 62.5%;
+      background-color: #777; }
+   #wrap {
+      font: 1.3em/1.3 Arial, Helvetica, sans-serif;
+      width: 30em;
+      margin: 0 auto;
+      padding: 1em;
+      background-color: #fff; }
+   h1 {
+      font-size: 200%; }
+
+   /* tdis CSS is used for tde Show/Hide functionality. */
+   .more {
+      display: none;
+      border-top: 1px solid #666;
+      border-bottom: 1px solid #666; }
+   a.showLink, a.hideLink {
+      text-decoration: none;
+      color: #36f;
+      padding-left: 8px;
+      background: transparent url(down.gif) no-repeat left; }
+   a.hideLink {
+      background: transparent url(up.gif) no-repeat left; }
+   a.showLink:hover, a.hideLink:hover {
+      border-bottom: 1px dotted #36f; }
+      tr{
+        text-align: center;
+      }
+</style>
+
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
 
     <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
 
     <script type="text/javascript">
     
         $(window).load(function() {
-       // $('#slider').nivoSlider();
+        $('#slider').nivoSlider();
     });
 
-        $(".more").toggle(function(){
-    $(this).text("less..").siblings(".complete").show();    
-}, function(){
-    $(this).text("more..").siblings(".complete").hide();    
-});
+      
+
     </script>
+
+    
 </style>
 
-    <title>Aayaam</title>
-    <img src="">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -42,7 +85,7 @@
     <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- WARNING: Respond.js doesn't work if you view tde page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -52,8 +95,7 @@
 
 <body>
 
-
-
+    
     <div class="mybrand">
     </div>
     <div class="address-bar">
@@ -74,23 +116,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <!-- navbar-brand is hidden on larger screens, but visible when tde menu is collapsed -->
                 <a class="navbar-brand" href="index.html">Business Casual</a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- Collect tde nav links, forms, and otder content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="index.html">Blog</a>
+                        <a href="about.html">Blog</a>
                     </li>
                     <li>
                         <a href="events.html">Events</a>
                     </li>
                     <li>
-                        <a href="parivar.html">Parivar</a>
+                        <a href="contact.html">Parivar</a>
                     </li>
                     <li>
                         <a href="contact.html">Contact us</a>
@@ -101,128 +143,4478 @@
         </div>
         <!-- /.container -->
     </nav>
-	<!--/.2014-15--->
-	<h1 style="position:absolute;left:600px;color:brown;font-size:45px " ><u>2014-15</u> 
-	</h1>
-	<img src = "members/adarsh shreeram -2014-15.jpg"/ style="position:absolute;top:350px;left:100px">
-	<h2 style="position:absolute;left:300px;top:370px;color:#FF0066;font-size:30px " ><u>Adarsh Shreeram</u><br>(President)</br> 
-	</h2>
-	<!--/.2013-14--->
-	<h1 style="position:absolute;left:600px;top:550px;color:brown;font-size:45px " ><u>2013-14</u> 
-	</h1>
-	<img src = "members/shavinder singh-2013-14.jpg"/ style="position:absolute;top:700px;left:100px">
-	<h2 style="position:absolute;left:300px;top:700px;color:#FF0066;font-size:30px " ><u>shavinder singh</u><br>(President)</br> 
-	</h2>
-	<!--/.2012-13--->
-	<h1 style="position:absolute;left:600px;top:900px;color:brown;font-size:45px " ><u>2012-13</u> 
-	</h1>
-	<img src = "members/mayank bung-2012-13.jpg"/ style="position:absolute;top:1050px;left:100px">
-	<h2 style="position:absolute;left:350px;top:1100px;color:#FF0066;font-size:30px " ><u>mayank bung</u><br>(President)</br> 
-	</h2>
-	<!--/.2011-12--->
-	<h1 style="position:absolute;left:600px;top:1250px;color:brown;font-size:45px " ><u>2011-12</u> 
-	</h1>
-	<img src = "members/robin watts-2011-12.jpg"/ style="position:absolute;top:1400px;left:100px">
-	<h2 style="position:absolute;left:320px;top:1450px;color:#FF0066;font-size:30px " ><u>robin watts</u><br>(President)</br> 
-	</h2>
-	<!--/.2010-11--->
-	<h1 style="position:absolute;left:600px;top:1600px;color:brown;font-size:45px " ><u>2010-11</u> 
-	</h1>
-	<img src = "members/Vivek Rikhari-2010-11.jpg"/ style="position:absolute;top:1750px;left:100px">
-	<h2 style="position:absolute;left:400px;top:1820px;color:#FF0066;font-size:30px " ><u>Vivek Rikhari</u><br>(President)</br> 
-	</h2>
-	<img src="members/girl.jpg"/ style= "position:absolute; top:1750px;left: 750px">
-	<h2 style="position:absolute;left:1000px;top:1820px;color:#FF0066;font-size:30px " ><u>Sakshi Vashisth </u>
-	</h2>
-	<div style ="position:absolute;top:800px">
-	<img src="members/piyush malviya-2010.jpg"/ style= "position:absolute; top:2100px;left: 100px">
-	<h2 style="position:absolute;left:480px;top:2200px;color:#FF0066;font-size:30px " ><u>piyush malviya</u><br>(Treasurer)</br>
-	</h2>
-	<img src="members/Kumar Aushij-2010.jpg"/ style= "position:absolute; top:2020px;left: 750px">
-	<h2 style="position:absolute;left:1200px;top:2200px;color:#FF0066;font-size:30px " ><u>Kumar Aushij</u>
-	</h2>
-	<img src="members/Prachi Tibrewal-2010.jpg"/ style= "position:absolute; top:2500px;left: 100px">
-	<h2 style="position:absolute;left:350px;top:2600px;color:#FF0066;font-size:30px " ><u>Prachi Tibrewal</u>
-	</h2>
-	<img src="members/girl.jpg"/ style= "position:absolute; top:2500px;left: 800px">
-	<h2 style="position:absolute;left:1050px;top:2600px;color:#FF0066;font-size:30px " ><u>Swati  R</u>
-	</h2>
-	<img src="members/girl.jpg"/ style= "position:absolute; top:2800px;left: 800px">
-	<h2 style="position:absolute;left:1050px;top:2850px;color:#FF0066;font-size:30px " ><u>T Janni </u>
-	</h2>
-	<img src="members/Kumar Gaurav -2010.jpg"/ style= "position:absolute; top:2760px;left: 100px">
-	<h2 style="position:absolute;left:750px;top:3050px;color:#FF0066;font-size:30px " ><u>Kumar<br> Gaurav</br></u>
-	</h2>
-	<img src="members/Manish Manhar -2010.jpg"/ style= "position:absolute; top:3400px;left: 100px">
-	<h2 style="position:absolute;left:400px;top:3500px;color:#FF0066;font-size:30px " ><u>Manish Manhar</u>
-	</h2>
-	<img src="members/Saurabh Gupta -2010.jpg"/ style= "position:absolute; top:3200px;left: 800px">
-	<h2 style="position:absolute;left:1050px;top:3250px;color:#FF0066;font-size:30px " ><u>Saurabh Gupta</u>
-	</h2>
-	<img src="members/boy.jpg"/ style= "position:absolute; top:3450px;left: 800px">
-	<h2 style="position:absolute;left:1050px;top:3500px;color:#FF0066;font-size:30px " ><u>Arpit Raj</u>
-	</h2>
-	</div>
-	<!--/.2009-10--->
-	<h1 style="position:absolute;left:600px;top:2050px;color:brown;font-size:45px " ><u>2009-10</u> 
-	</h1>
-	<img src = "members/devdutt singh-2009-10.jpg"/ style="position:absolute;top:2190px;left:100px">
-	<h2 style="position:absolute;left:740px;top:2390px;color:#FF0066;font-size:30px " ><u>devdutt singh</u><br>(President)</br> 
-	</h2>
-	
-	<img src = "members/boy.jpg"/ style="position:absolute;top:2570px;left:800px">
-	<h2 style="position:absolute;left:1050px;top:2590px;color:#FF0066;font-size:30px " ><u>Prareek khasgiwala</u><br>(Vice President)</br> 
-	</h2>
-	<!--.2008-09-->
-	<h1 style="position:absolute;left:600px;top:4450px;color:brown;font-size:45px " ><u>2008-09</u> 
-	</h1>
-	<img src = "members/boy.jpg"/ style="position:absolute;top:4500px;left:100px">
-	<h2 style="position:absolute;left:350px;top:4540px;color:#FF0066;font-size:30px " ><u>suman saurabh</u><br>(President)</br> 
-	</h2>
-	<!--2007-08-->
-	<h1 style="position:absolute;left:600px;top:4750px;color:brown;font-size:45px " ><u>2007-08</u> 
-	</h1>
-	<img src = "members/mrinal kumar-2007-08.jpg"/ style="position:absolute;top:4850px;left:100px">
-	<h2 style="position:absolute;left:310px;top:4890px;color:#FF0066;font-size:30px " ><u>mrinal kumar</u></u><br>(President)</br> 
-	</h2>
-	<img src = "members/Manish Mitruka 2007-08.jpg"/ style="position:absolute;top:4850px;left:700px">
-	<h2 style="position:absolute;left:940px;top:4890px;color:#FF0066;font-size:30px " ><u>Manish Mitruka </u>
-	</h2>
-	<img src = "members/boy.jpg"/ style="position:absolute;top:5100px;left:100px">
-	<h2 style="position:absolute;left:350px;top:5150px;color:#FF0066;font-size:30px " ><u>Ravish Choudhary</u>
-	</h2>
-	<img src = "members/boy.jpg"/ style="position:absolute;top:5100px;left:700px">
-	<h2 style="position:absolute;left:940px;top:5150px;color:#FF0066;font-size:30px " ><u>Amit Nimekar</u>
-	</h2>
-	<img src = "members/rahul sharma -2007-08.jpg"/ style="position:absolute;top:5350px;left:100px">
-	<h2 style="position:absolute;left:300px;top:5400px;color:#FF0066;font-size:30px " ><u>rahul sharma</u>
-	</h2>
-	<img src = "members/boy.jpg"/ style="position:absolute;top:5350px;left:700px">
-	<h2 style="position:absolute;left:940px;top:5400px;color:#FF0066;font-size:30px " ><u>Tauqeer Alam</u>
-	</h2>
-	<img src ="members/girl.jpg"/ style="position:absolute;top:5600px;left:100px;">
-	<h2 style="position:absolute;left:400px;top:5650px;color:#FF0066;font-size:30px"><u>Muthu Lakshmi</u></h2>
-	<!--2006-07-->
-	<h1 style="position:absolute;left:600px;top:5850px;color:brown;font-size:45px " ><u>2006-07</u> 
-	</h1>
-	<img src = "members/boy.jpg"/ style="position:absolute;top:5950px;left:100px">
-	<h2 style="position:absolute;left:330px;top:5970px;color:#FF0066;font-size:30px " ><u>Sutikshana Pratap <br>Kaushik</br> </u><br>(President)</br> 
-	</h2>
-	<img src = "members/Monika Arya-2006-07.jpg"/ style="position:absolute;top:5950px;left:700px">
-	<h2 style="position:absolute;left:1150px;top:6100px;color:#FF0066;font-size:30px " ><u>monica arya</u> 
-	</h2>
-	<img src = "members/boy.jpg"/ style="position:absolute;top:6170px;left:100px">
-	<h2 style="position:absolute;left:330px;top:6210px;color:#FF0066;font-size:30px " ><u>Abhinav Sigatia</u> 
-	</h2>
-	<img src = "members/Varun Kumar-2006-07 (2).jpg"/ style="position:absolute;top:6410px;left:100px">
-	<h2 style="position:absolute;left:330px;top:6450px;color:#FF0066;font-size:30px " ><u>Varun Kumar</u> 
-	</h2>
-	<img src = "members/boy.jpg"/ style="position:absolute;top:6380px;left:700px">
-	<h2 style="position:absolute;left:950px;top:6440px;color:#FF0066;font-size:30px " ><u>Aditya Agarwal</u> 
-	</h2>
-	<img src = "members/Abhay Kumar Mishra -2006-07.jpg"/ style="position:absolute;top:6580px;left:100px">
-	<h2 style="position:absolute;left:430px;top:6700px;color:#FF0066;font-size:30px " ><u>Aditya Agarwal</u> 
-	</h2>
-</body>
 
-</html>
+    <div class="container">
+
+        <!--div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Umang
+                        <strong>2015</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  allign="right">
+
+               
+                    <p>panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts                                       </p>
+                 </div>   
+
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="img/9.jpg" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  allign="right">
+
+               
+                    <p>panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts                                       </p>
+                 </div> 
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="img/9.jpg" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  allign="right">
+
+               
+                    <p>panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts                                       </p>
+                 </div> 
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="img/9.jpg" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  allign="right">
+
+               
+                    <p>panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts                                       </p>
+                 </div> 
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="img/9.jpg" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  allign="right">
+
+               
+                    <p>panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts                                       </p>
+                 </div> 
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="img/9.jpg" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  allign="right">
+
+               
+                    <p>panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts                                       </p>
+                 </div> 
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="img/9.jpg" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  allign="right">
+
+               
+                    <p>panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts                                       </p>
+                 </div> 
+
+                     <a href="#" id="example1-show" class="showLink" onclick="showHide('example1');return false;">See more.</a></p>
+      <div id="example1" class="more">
+         <p>Congratulations! You've found tde magic hidden text! Clicking tde link below will hide tdis content again.</p>
+         <p><a href="#" id="example1-hide" class="hideLink" onclick="showHide('example1');return false;">Hide tdis content.</a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div-->
+
+
+         
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                    <a href="#" id="example1-show" onclick="showHide('example1');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2014-15</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example1" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2014-15</strong>
+                    </h1>
+          </div>
+                
+                <div class="col-md-3" >
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/adarsh shreeram -2014-15 (2).jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Adarsh Shreeram<br></br>President<br></br></p>
+                 </div>  
+                
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/amit kumar-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+                <p><br></br>Amit Kumar<br></br><br></br></p>
+                   
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+                 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/nitesh jaiswal-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Nitesh Jaiswal<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Rishi Poddar-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Rishi Poddar <br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+                
+                
+                 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Nikhil Dwivedi-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Nikhil Dwivedi<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Amardeep Jha<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Anurag-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Anurag<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Shivkaran Potaliya-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Shivkaran Potaliya<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+				 <div class="col-md-3"  >
+
+               
+                    <p><br></br>Dharmendra Gujjar<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Ambuja Sharma-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Ambuja Sharma<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Pranjal Pandey-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+				 <div class="col-md-3"  >
+
+               
+                    <p><br></br>Pranjal Pandey<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Hemanth<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Ravikesh Kumar-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+				 <div class="col-md-3"  >
+
+               
+                    <p><br></br>Ravikesh Kumar<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Jitendra Solanki<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 
+				 
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Divyanshu-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+				 <div class="col-md-3"  >
+
+               
+                    <p><br></br>Divyanshu<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/girl.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Divya Mehta<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 
+				 
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+				 <div class="col-md-3"  >
+
+               
+                    <p><br></br>Vijendra<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/girl.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Priti Duggal<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 
+				  <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Rajesh-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+				 <div class="col-md-3"  >
+
+               
+                    <p><br></br>Rajesh Sethi<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Sharad Mohte<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 
+				 
+				 
+                
+                
+                           
+                              
+         <p><a href="#" id="example1-hide" class="hideLink" onclick="showHide('example1');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                    <a href="#" id="example2-show"  onclick="showHide('example2');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2013-14</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example2" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2013-14</strong>
+                    </h1>
+          </div>
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/shavinder singh-2013-14.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Shavinder Singh<br></br>President<br></br></p>
+                 </div>  
+                
+				
+                                         
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/anmol kumar-2013.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Anmol Kumar <br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/madhav kumar chaurasia-2013-14.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Madhav Kumar <br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Kumund Kumar <br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/manish kumar-2013-14.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Manish Kumar <br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Dipesh Jain <br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/harsh phophalia-2013-14.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Harsh Phophalia <br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Sandeep Avasthi <br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Sanjay Singh <br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Pranav Bharti <br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				  <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/girl.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Aakanksha Satyarthi<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/ravi kayasth-2013-14.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Ravi Kayasth<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				  <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/vikas -2013.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Vikas Meghwani<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/nirdesh kumari-2013-14.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Nirdesh Kumari<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				  <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Viswajeet<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Bhubaneswar<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/girl.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Aapurti Marodia<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/vismay singh-2013-14.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Vismay Singh<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/harshita mehta-2013-14.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Harshita Meheta<br></br> <br></br></p>
+                 </div>  
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+         <p><a href="#" id="example2-hide" class="hideLink" onclick="showHide('example2');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                    <a href="#" id="example3-show"  onclick="showHide('example3');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2012-13</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example3" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2012-13</strong>
+                    </h1>
+          </div>
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/mayank bung-2012-13.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Mayank Bung<br></br>President<br></br></p>
+                 </div>  
+                
+				
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+  
+         <p><a href="#" id="example3-hide" class="hideLink" onclick="showHide('example3');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                    <a href="#" id="example4-show"  onclick="showHide('example4');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2011-12</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example4" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2011-12</strong>
+                    </h1>
+          </div>
+      <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/robin watts-2011-12.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Rohit Watts<br></br>President<br></br></p>
+                 </div>  
+                
+				
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                   <br></br>           <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>          
+         <p><a href="#" id="example4-hide" class="hideLink" onclick="showHide('example4');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                    <a href="#" id="example5-show"  onclick="showHide('example5');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2010-11</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example5" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2010-11</strong>
+                    </h1>
+          </div>
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Vivek Rikhari-2010-11.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Vivek Rikhari<br></br>President<br></br></p>
+                 </div>  
+                
+                                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/girl.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Sakshi Vashishth<br></br><br></br></p>
+                 </div>  
+                                <br>
+               
+                    
+  
+               <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+                
+         <p><a href="#" id="example5-hide" class="hideLink" onclick="showHide('example5');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                    <a href="#" id="example6-show"  onclick="showHide('example6');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2009-10</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example6" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2009-10</strong>
+                    </h1>
+          </div>
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/devdutt singh-2009-10.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Devdutt Singh<br></br>President<br></br></p>
+                 </div>  
+                
+                                <div class="col-md-3">
+                 <div class="event-img">
+                                
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Prareek Khasgiwala<br></br>Vice President<br></br></p>
+                 </div>  
+                                <br>
+               
+                    
+  
+               
+                <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/piyush malviya-2010.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Piyush Malviya<br></br>Treasurer<br></br></p>
+                 </div>  
+                  
+
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Kumar Aushij-2010 (2).jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Kumar Aushij<br></br><br></br></p>
+                 </div>  
+                    
+              
+                  <br>
+               
+                <div class="col-md-3">
+                 
+                                 
+                     <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+				 <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Prachi Tibrewal-2010 (2).jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Prachi Tibrewal<br></br><br></br></p>
+                 </div>  
+                  
+
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/girl.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Swati R<br><br></p>
+                 </div>  
+                    
+              
+                  <br>
+                <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Kumar Gaurav -2010 (2).jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Kumar Gaurav<br><br></p>
+                 </div>  
+                  
+
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/girl.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>T Janni<br><br></p>
+                 </div>  
+                    
+              
+                  <br>
+  <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Manish Manhar -2010.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+				<div class="col-md-3"  >
+
+               
+                    <p><br><br>Manish Manhar<br><br></p>
+                 </div>  
+                    
+              
+                  <br>
+				  <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Arpit Jain<br><br></p>
+                 </div>  
+                    
+              
+                  <br>
+				  <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Saurabh Gupta -2010 (2).jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Saurabh Gupta<br><br></p>
+                 </div>  
+                    
+              
+                  <br>
+				  <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+				<div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+				<br>
+         <p><a href="#" id="example6-hide" class="hideLink" onclick="showHide('example6');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                   <a href="#" id="example7-show"  onclick="showHide('example7');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2008-09</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example7" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2008-09</strong>
+                    </h1>
+          </div>
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Suman Saurabh<br>President<br></p>
+                 </div>  
+                <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+				<div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+                               
+         <p><a href="#" id="example7-hide" class="hideLink" onclick="showHide('example7');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                    <a href="#" id="example8-show"  onclick="showHide('example8');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2007-08</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example8" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2007-08</strong>
+                    </h1>
+          </div>
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/mrinal kumar-2007-08.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Mrinal Kumar<br><br>President<br></p>
+                 </div>  
+                
+                                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Ravish Choudhary<br><br></p>
+                 </div>  
+                                <br>
+               
+                    
+  <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+               
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Manish Mitruka 2007-08.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Manish Mitruka<br><br></p>
+                 </div>  
+                  
+
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/girl.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Muthu Lakshmi<br><br></p>
+                 </div>  
+                    
+              
+                  <br>
+               <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+ 
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/rahul sharma -2007-08.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Rahul Sharma<br><br></p>
+                 </div>  
+                  
+
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Tauqueer Alam<br><br></p>
+                 </div>  
+                    
+              
+                  <br>
+				  <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+ 
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Amit Nimekar<br><br></p>
+                 </div>  
+                  
+<br>
+          <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+ <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+       
+                
+         <p><a href="#" id="example8-hide" class="hideLink" onclick="showHide('example8');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                    <a href="#" id="example9-show"  onclick="showHide('example9');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2006-07</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example9" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2006-07</strong>
+                    </h1>
+          </div>
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Sutikshana Pratap Kaushik<br><br>President<br></p>
+                 </div>  
+                
+                                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Monika Arya-2006-07 (2).jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Monica Arya<br><br></p>
+                 </div>  
+                                <br>
+               
+                    
+  <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+               
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Varun Kumar-2006-07 (2).jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Varun Kumar<br><br></p>
+                 </div>  
+                  
+
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Aditya Agarwal<br><br></p>
+                 </div>  
+                    
+              
+                  <br>
+               <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+ 
+                
+ 
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Abhinav Sigatia<br><br></p>
+                 </div>  
+                  
+<br>
+<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Abhay Kumar Mishra -2006-07.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Abhay Kumar Mishra<br><br></p>
+                 </div>  
+                  
+<br>
+          <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+ 
+                
+         <p><a href="#" id="example8-hide" class="hideLink" onclick="showHide('example9');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+        
+        
+<!--
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Our
+                        <strong>Team</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <h3>John Smitd
+                        <small>Job Title</small>
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <h3>John Smitd
+                        <small>Job Title</small>
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <h3>John Smitd
+                        <small>Job Title</small>
+                    </h3>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+-->
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright aayaam csg 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="autdor" content="">
+
+    <title>Events</title>
+    <script language="javascript" type="text/javascript">
+function showHide(shID) {
+   if (document.getElementById(shID)) {
+      if (document.getElementById(shID+'-show').style.display != 'none') {
+         document.getElementById(shID+'-show').style.display = 'none';
+         document.getElementById(shID).style.display = 'block';
+      }
+      else {
+         document.getElementById(shID+'-show').style.display = 'inline';
+         document.getElementById(shID).style.display = 'none';
+      }
+   }
+}
+</script>
+<style type="text/css">
+   /* tdis CSS is just for presentational purposes. */
+   body {
+      font-size: 62.5%;
+      background-color: #777; }
+   #wrap {
+      font: 1.3em/1.3 Arial, Helvetica, sans-serif;
+      width: 30em;
+      margin: 0 auto;
+      padding: 1em;
+      background-color: #fff; }
+   h1 {
+      font-size: 200%; }
+
+   /* tdis CSS is used for tde Show/Hide functionality. */
+   .more {
+      display: none;
+      border-top: 1px solid #666;
+      border-bottom: 1px solid #666; }
+   a.showLink, a.hideLink {
+      text-decoration: none;
+      color: #36f;
+      padding-left: 8px;
+      background: transparent url(down.gif) no-repeat left; }
+   a.hideLink {
+      background: transparent url(up.gif) no-repeat left; }
+   a.showLink:hover, a.hideLink:hover {
+      border-bottom: 1px dotted #36f; }
+      tr{
+        text-align: center;
+      }
+</style>
+
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+
+    <script type="text/javascript">
+    
+        $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+
+      
+
+    </script>
+
+    
+</style>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view tde page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    
+    <div class="mybrand">
+    </div>
+    <div class="address-bar">
+    <img style="display:block;float:left;overflow:hidden; margin-left:40px"class"img-left" src="img/mylogo1.png" height="150" width="170">    
+    <img style="margin-top:20px;float:centre;overflow:hidden;" class"img-left" src="img/logo1.png" height="100" width="300">
+    <img style="margin-top:10px;float:right;overflow:hidden;margin-right:40px" class"img-left" src="img/inst.png" height="130" width="120">
+        
+        </div>
+
+    <!-- Navigation -->
+    <nav  class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when tde menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Business Casual</a>
+            </div>
+            <!-- Collect tde nav links, forms, and otder content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Parivar</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <!--div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Umang
+                        <strong>2015</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  allign="right">
+
+               
+                    <p>panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts                                       </p>
+                 </div>   
+
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="img/9.jpg" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  allign="right">
+
+               
+                    <p>panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts                                       </p>
+                 </div> 
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="img/9.jpg" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  allign="right">
+
+               
+                    <p>panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts                                       </p>
+                 </div> 
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="img/9.jpg" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  allign="right">
+
+               
+                    <p>panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts                                       </p>
+                 </div> 
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="img/9.jpg" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  allign="right">
+
+               
+                    <p>panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts                                       </p>
+                 </div> 
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="img/9.jpg" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  allign="right">
+
+               
+                    <p>panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts                                       </p>
+                 </div> 
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="img/9.jpg" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  allign="right">
+
+               
+                    <p>panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts panigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dashpanigrahi smrutitilak dash posts                                       </p>
+                 </div> 
+
+                     <a href="#" id="example1-show" class="showLink" onclick="showHide('example1');return false;">See more.</a></p>
+      <div id="example1" class="more">
+         <p>Congratulations! You've found tde magic hidden text! Clicking tde link below will hide tdis content again.</p>
+         <p><a href="#" id="example1-hide" class="hideLink" onclick="showHide('example1');return false;">Hide tdis content.</a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div-->
+
+
+         
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                    <a href="#" id="example1-show" onclick="showHide('example1');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2014-15</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example1" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2014-15</strong>
+                    </h1>
+          </div>
+                
+                <div class="col-md-3" >
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/adarsh shreeram -2014-15 (2).jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Adarsh Shreeram<br></br>President<br></br></p>
+                 </div>  
+                
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/amit kumar-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+                <p><br></br>Amit Kumar<br></br><br></br></p>
+                   
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+                 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/nitesh jaiswal-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Nitesh Jaiswal<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Rishi Poddar-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Rishi Poddar <br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+                
+                
+                 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Nikhil Dwivedi-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Nikhil Dwivedi<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Amardeep Jha<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Anurag-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Anurag<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Shivkaran Potaliya-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Shivkaran Potaliya<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+				 <div class="col-md-3"  >
+
+               
+                    <p><br></br>Dharmendra Gujjar<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Ambuja Sharma-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Ambuja Sharma<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Pranjal Pandey-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+				 <div class="col-md-3"  >
+
+               
+                    <p><br></br>Pranjal Pandey<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Hemanth<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Ravikesh Kumar-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+				 <div class="col-md-3"  >
+
+               
+                    <p><br></br>Ravikesh Kumar<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Jitendra Solanki<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 
+				 
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Divyanshu-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+				 <div class="col-md-3"  >
+
+               
+                    <p><br></br>Divyanshu<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/girl.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Divya Mehta<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 
+				 
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+				 <div class="col-md-3"  >
+
+               
+                    <p><br></br>Vijendra<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/girl.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Priti Duggal<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 
+				  <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Rajesh-2014-15.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+				 <div class="col-md-3"  >
+
+               
+                    <p><br></br>Rajesh Sethi<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Sharad Mohte<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 
+				 
+				 
+                
+                
+                           
+                              
+         <p><a href="#" id="example1-hide" class="hideLink" onclick="showHide('example1');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                    <a href="#" id="example2-show"  onclick="showHide('example2');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2013-14</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example2" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2013-14</strong>
+                    </h1>
+          </div>
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/shavinder singh-2013-14.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Shavinder Singh<br></br>President<br></br></p>
+                 </div>  
+                
+				
+                                         
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/anmol kumar-2013.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Anmol Kumar <br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/madhav kumar chaurasia-2013-14.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Madhav Kumar <br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Kumund Kumar <br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/manish kumar-2013-14.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Manish Kumar <br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Dipesh Jain <br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/harsh phophalia-2013-14.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Harsh Phophalia <br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Sandeep Avasthi <br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Sanjay Singh <br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Pranav Bharti <br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				  <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/girl.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Aakanksha Satyarthi<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/ravi kayasth-2013-14.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Ravi Kayasth<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				  <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/vikas -2013.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Vikas Meghwani<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/nirdesh kumari-2013-14.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Nirdesh Kumari<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				  <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Viswajeet<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Bhubaneswar<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 
+				 <div class="col-md-3"  >
+
+				 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/girl.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Aapurti Marodia<br></br> <br></br></p>
+                 </div>  
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/vismay singh-2013-14.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Vismay Singh<br></br> <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/harshita mehta-2013-14.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Harshita Meheta<br></br> <br></br></p>
+                 </div>  
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+				 <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+         <p><a href="#" id="example2-hide" class="hideLink" onclick="showHide('example2');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                    <a href="#" id="example3-show"  onclick="showHide('example3');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2012-13</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example3" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2012-13</strong>
+                    </h1>
+          </div>
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/mayank bung-2012-13.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Mayank Bung<br></br>President<br></br></p>
+                 </div>  
+                
+				
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+  
+         <p><a href="#" id="example3-hide" class="hideLink" onclick="showHide('example3');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                    <a href="#" id="example4-show"  onclick="showHide('example4');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2011-12</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example4" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2011-12</strong>
+                    </h1>
+          </div>
+      <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/robin watts-2011-12.jpg" height="200px" width="200px" alt="">
+                       
+                               </div> 
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Rohit Watts<br></br>President<br></br></p>
+                 </div>  
+                
+				
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                   <br></br>           <br></br></p>
+                 </div>  
+                
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>          
+         <p><a href="#" id="example4-hide" class="hideLink" onclick="showHide('example4');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                    <a href="#" id="example5-show"  onclick="showHide('example5');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2010-11</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example5" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2010-11</strong>
+                    </h1>
+          </div>
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Vivek Rikhari-2010-11.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Vivek Rikhari<br></br>President<br></br></p>
+                 </div>  
+                
+                                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/girl.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Sakshi Vashishth<br></br><br></br></p>
+                 </div>  
+                                <br>
+               
+                    
+  
+               <div class="col-md-3"  >
+
+               
+                    <p><br></br>                            <br></br>           <br></br></p>
+                 </div>  
+                
+         <p><a href="#" id="example5-hide" class="hideLink" onclick="showHide('example5');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                    <a href="#" id="example6-show"  onclick="showHide('example6');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2009-10</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example6" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2009-10</strong>
+                    </h1>
+          </div>
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/devdutt singh-2009-10.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Devdutt Singh<br></br>President<br></br></p>
+                 </div>  
+                
+                                <div class="col-md-3">
+                 <div class="event-img">
+                                
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Prareek Khasgiwala<br></br>Vice President<br></br></p>
+                 </div>  
+                                <br>
+               
+                    
+  
+               
+                <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/piyush malviya-2010.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Piyush Malviya<br></br>Treasurer<br></br></p>
+                 </div>  
+                  
+
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Kumar Aushij-2010 (2).jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Kumar Aushij<br></br><br></br></p>
+                 </div>  
+                    
+              
+                  <br>
+               
+                <div class="col-md-3">
+                 
+                                 
+                     <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+				 <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Prachi Tibrewal-2010 (2).jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br></br>Prachi Tibrewal<br></br><br></br></p>
+                 </div>  
+                  
+
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/girl.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Swati R<br><br></p>
+                 </div>  
+                    
+              
+                  <br>
+                <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Kumar Gaurav -2010 (2).jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Kumar Gaurav<br><br></p>
+                 </div>  
+                  
+
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/girl.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>T Janni<br><br></p>
+                 </div>  
+                    
+              
+                  <br>
+  <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Manish Manhar -2010.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+				<div class="col-md-3"  >
+
+               
+                    <p><br><br>Manish Manhar<br><br></p>
+                 </div>  
+                    
+              
+                  <br>
+				  <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Arpit Jain<br><br></p>
+                 </div>  
+                    
+              
+                  <br>
+				  <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+				<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Saurabh Gupta -2010 (2).jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Saurabh Gupta<br><br></p>
+                 </div>  
+                    
+              
+                  <br>
+				  <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+				<div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+				<br>
+         <p><a href="#" id="example6-hide" class="hideLink" onclick="showHide('example6');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                   <a href="#" id="example7-show"  onclick="showHide('example7');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2008-09</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example7" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2008-09</strong>
+                    </h1>
+          </div>
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Suman Saurabh<br>President<br></p>
+                 </div>  
+                <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+				<div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+                               
+         <p><a href="#" id="example7-hide" class="hideLink" onclick="showHide('example7');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                    <a href="#" id="example8-show"  onclick="showHide('example8');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2007-08</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example8" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2007-08</strong>
+                    </h1>
+          </div>
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/mrinal kumar-2007-08.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Mrinal Kumar<br><br>President<br></p>
+                 </div>  
+                
+                                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Ravish Choudhary<br><br></p>
+                 </div>  
+                                <br>
+               
+                    
+  <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+               
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Manish Mitruka 2007-08.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Manish Mitruka<br><br></p>
+                 </div>  
+                  
+
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/girl.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Muthu Lakshmi<br><br></p>
+                 </div>  
+                    
+              
+                  <br>
+               <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+ 
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/rahul sharma -2007-08.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Rahul Sharma<br><br></p>
+                 </div>  
+                  
+
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Tauqueer Alam<br><br></p>
+                 </div>  
+                    
+              
+                  <br>
+				  <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+ 
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Amit Nimekar<br><br></p>
+                 </div>  
+                  
+<br>
+          <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+ <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+       
+                
+         <p><a href="#" id="example8-hide" class="hideLink" onclick="showHide('example8');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!--div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div-->
+                <!--div class="col-md-6"-->
+                    
+                    <a href="#" id="example9-show"  onclick="showHide('example9');return false;"><hr>
+                    <h2 class="intro-text text-center">batch
+                        <strong>2006-07</strong>
+                    </h2>
+                    <hr> </a></p>
+      <div id="example9" class="more">
+         <div class="col-md-12"> <br>
+<h1 class="intro-text text-center">batch
+                        <strong>2006-07</strong>
+                    </h1>
+          </div>
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Sutikshana Pratap Kaushik<br><br>President<br></p>
+                 </div>  
+                
+                                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Monika Arya-2006-07 (2).jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Monica Arya<br><br></p>
+                 </div>  
+                                <br>
+               
+                    
+  <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+               
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Varun Kumar-2006-07 (2).jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Varun Kumar<br><br></p>
+                 </div>  
+                  
+
+                
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Aditya Agarwal<br><br></p>
+                 </div>  
+                    
+              
+                  <br>
+               <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+ 
+                
+ 
+                <div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/boy.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Abhinav Sigatia<br><br></p>
+                 </div>  
+                  
+<br>
+<div class="col-md-3">
+                 <div class="event-img">
+                                 
+                    <img class="img-responsive img-border-left" src="members/Abhay Kumar Mishra -2006-07.jpg" height="200px" width="200px" alt="">
+                       
+                               </div>
+                </div>
+                <div class="col-md-3"  >
+
+               
+                    <p><br><br>Abhay Kumar Mishra<br><br></p>
+                 </div>  
+                  
+<br>
+          <div class="col-md-3">
+                 <p><br></br>                            <br></br>           <br></br></p>
+                </div>
+ 
+                
+         <p><a href="#" id="example8-hide" class="hideLink" onclick="showHide('example9');return false;"><strong>show less</strong></a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+
+        
+        
+<!--
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Our
+                        <strong>Team</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <h3>John Smitd
+                        <small>Job Title</small>
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <h3>John Smitd
+                        <small>Job Title</small>
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <h3>John Smitd
+                        <small>Job Title</small>
+                    </h3>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+-->
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright aayaam csg 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
